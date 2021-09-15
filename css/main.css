@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    grid-template-areas: 
+    "adidas apple amazon beats"
+    "adidas test test beats";
+}
+
+.adidas{
+    grid-area: adidas;
+}
+
+.apple{
+    grid-area: apple;
+}
+
+.amazon{
+    grid-area: amazon;
+}
+
+.beats{
+    grid-area: beats;
+}
+
+.test{
+    grid-area: test;
+}
+
