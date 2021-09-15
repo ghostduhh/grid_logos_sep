@@ -87,4 +87,5 @@ img{
 .links a{
     margin-left: 3em;
     color: white;
+    text-decoration: none;
 }
