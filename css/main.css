@@ -1,8 +1,9 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 100px auto auto;
     grid-template-areas: 
+    "nav nav nav nav"
     "adidas apple amazon beats"
     "headphones shop music shoes";
 }
@@ -39,8 +40,31 @@
     grid-area: headphones;
 }
 
+.nav{
+    grid-area: nav;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "logo . links search";
+}
 
-.grid-container > div{
+.logo{
+    grid-area: logo;
+}
+
+.links{
+    grid-area: links;
+}
+
+.search{
+    grid-area: search;
+}
+
+
+.adidas, .apple, .amazon, .beats,
+.shoes, .music, .shop, .headphones{
     max-height: 50vh;
     /* justify-self: center;
     align-self: center; */
@@ -53,4 +77,14 @@
 img{
     width: 100%;
     height: auto;
+}
+
+.nav img{
+    height: 100%;
+    width: auto;
+}
+
+.links a{
+    margin-left: 3em;
+    color: white;
 }
