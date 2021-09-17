@@ -1,0 +1,12 @@
+header {
+    color: black;
+}
+
+.grid-container-0 {
+    display: table-header-group;
+    -ms-grid-column-span: auto;
+}
+
+.grid-container-2 p {
+    color: snow;
+}
